@@ -619,7 +619,7 @@ input, textarea {
 .menu__mobile--salir {
     display: none;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1025px) {
     .portada {
         display: flex;
         justify-content: center;
@@ -740,7 +740,7 @@ input, textarea {
         background-position-y: -150px;
     }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 769px) {
     .portada {
         background-position-x: -850px;
     }
