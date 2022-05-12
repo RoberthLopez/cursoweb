@@ -10,6 +10,13 @@ body {
 header {
     height: auto;
 }
+main {
+    background-color: #fe5d9f;
+    -webkit-box-shadow: 0px 50px 50px -3px rgba(0,0,0,0.41); 
+    box-shadow: 0px 50px 50px -3px rgba(0,0,0,0.41);
+    padding-bottom: 100px;
+    margin-top: 0;
+}
 .envios {
     box-sizing: border-box;
     background-color: #f686bd;
@@ -26,6 +33,7 @@ header {
     margin-top: 50px;
     margin-left: 10%;
     margin-right: 10%;
+    background-color: #fe5d9f;
 }
 .iconos {
     display: flex;
@@ -55,7 +63,11 @@ header {
     background-color: #fe5d9f;
     top: 0;
     position:sticky;
-    z-index: 1;
+    z-index: 10;
+    height: 60px;
+}
+nav {
+    background-color: #fe5d9f;
 }
 nav ul li {
     padding: 20px;
@@ -67,6 +79,9 @@ nav ul li {
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 900;
+}
+.nav__links:hover {
+    color: floralwhite;
 }
 .iconos {
     align-self: center;
@@ -86,7 +101,6 @@ header i  {
     max-width: 100%;
 }
 .portada {
-    box-sizing: border-box;
     display: block;
     background-image: 
     url(../images/portada-2.png);
@@ -164,9 +178,7 @@ header i  {
     width: 8rem;
     cursor: pointer;
     transition: 0.5s;
-}
-.portada__boton:hover {
-    transform: scale(1.1);
+    text-decoration: none;
 }
 
 .titulo {
@@ -274,7 +286,7 @@ header i  {
     text-align: left;
 }
 
-.beneficios {
+/*.beneficios {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -301,6 +313,12 @@ header i  {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+*/
+.beneficios__titulo {
+    font-family: 'Bungee', cursive;
+    font-size: 30px;
+    color: white;
 }
 .clientesfelices {
     display: flex;
@@ -359,6 +377,9 @@ footer {
     color: white;
     font-size: 17px;
     min-height: 300px;
+    bottom: 0;
+    position: sticky;
+    z-index: -100;
 }
 footer i {
     padding: 10px;
@@ -371,6 +392,9 @@ footer i {
 .footer__links {
     color: white;
     list-style: none;
+}
+.footer__links:hover {
+    color: white;
 }
 .footer__barra {
     display: flex;
@@ -529,6 +553,10 @@ article a {
     max-width: 100%;
     max-height: auto;
 }
+.form__checkbox {
+    padding: 0;
+    margin: 0 auto;
+}
 form {
     color: #f1e4f3;
 }
@@ -566,7 +594,7 @@ input, textarea {
     margin: auto;
     margin-top: 20px;
 }
-.productos {
+/*.productos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -596,6 +624,7 @@ input, textarea {
     font-size: 17px;
     font-weight: 500;
 }
+*/
 .producto__boton {
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 900;
@@ -609,9 +638,12 @@ input, textarea {
     height: 2rem;
     width: 125px;
     cursor: pointer;
+    text-decoration: none;
 }
 .producto__boton:hover {
     transform: scale(1.1);
+    color: white;
+    background-color: #f686bd;
 }
 .redes__mobile {
     display: none;
@@ -637,7 +669,7 @@ input, textarea {
         display: flex;
         flex-wrap: wrap;
     }
-    .beneficios__contenedor {
+    /*.beneficios__contenedor {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -646,6 +678,7 @@ input, textarea {
     .beneficios__tarjeta {
         width: 100%;
     }
+    */
     .portada__paginas {
         background-position-x: -400px;
     }
@@ -732,9 +765,11 @@ input, textarea {
     .footer_titulo {
         text-align: center;
     }
+    /*
     .beneficios__titulo {
         text-align: center;
     }
+    */
     .portada__paginas {
         background-position-x: -600px;
         background-position-y: -150px;
@@ -772,13 +807,14 @@ input, textarea {
     .fajas__imagen {
         width: 100%;
     }
-    .beneficios__titulo {
+    /*.beneficios__titulo {
         line-height: 30px;
         margin-bottom: 30px;
     }
     .beneficios__tarjeta {
         margin-bottom: 70px;
     }
+    */
     .footer__links {
         font-size: 13px;
     }
