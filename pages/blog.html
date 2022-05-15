@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="../css/style.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;1,700&family=Bungee&display=swap" rel="stylesheet">
@@ -98,11 +100,15 @@
       </nav>
     <main>
         <section class="portada__paginas">
-            <h1 class="portada__paginas--titulo">BLOG</h1>
+            <h1 class="portada__paginas--titulo fade-in-top">BLOG</h1>
         </section>
         <section class="blog">
-            <article class="entrada">
-                <a href="#">
+            <article class="entrada" data-aos="fade-zoom-in"
+            data-aos-easing="linear"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-duration="1000">
+                <a href="#" class="entrada__link">
                     <img src="../images/mujer-silueta.jpg" alt="mujer con bonita silueta" class="entrada__imagen">
                     <div class="entrada__fecha">
                         17/4/2022 Lectura de 4min
@@ -113,8 +119,12 @@
                 </a>
             </article>
 
-            <article class="entrada">
-                <a href="#">
+            <article class="entrada" data-aos="fade-zoom-in"
+            data-aos-easing="linear"
+            data-aos-delay="300"
+            data-aos-offset="0"
+            data-aos-duration="1000">
+                <a href="#" class="entrada__link">
                     <img src="../images/mujeres-fajas.jpg" alt="mujeres felices con     faja" class="entrada__imagen">
                     <div class="entrada__fecha">
                         10/4/2022 Lectura de 4min
@@ -220,5 +230,9 @@
         </div>
     </footer>   
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>   
 </html>
