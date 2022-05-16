@@ -1,0 +1,223 @@
+@media screen and (max-width: 1025px) {
+    .portada {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 700px;
+        padding: 5%;
+        margin: 0;
+    }
+    .tarjetas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .clientesfelices {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .portada__paginas {
+        background-position-x: -400px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    header {
+        height: auto;
+    }
+    .envios {
+        display: none;
+    }
+    .menu1 {
+        display: none;
+        position: static;
+    }
+    .barrasuperior {
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    .iconos {
+        display: none;
+    }
+    .logo img{
+        max-height: 80px;
+    }
+    .redes__mobile {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .menu__mobile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &--salir {
+            display: block;
+            position: absolute;
+            top: -10%;
+            right: 5%;
+        }
+    }
+    #lateral {
+        display: block;
+        width: 60%;
+        height: 100vh;
+        opacity: 0.96;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 10;
+        padding-left: 5%;
+        padding-top: 5%;
+        transition: 1s;
+
+        &:target {
+            left: 0;
+        }
+
+    }
+    .nav_lista {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        font-size: 2.5rem;
+    }
+    .portada {
+        background-position-x: -550px;
+
+        &__contenedor {
+            margin: 7%
+        }
+
+        &__titulo {
+            text-align: center;
+        }
+
+        &__texto {
+            text-align: center;
+        }
+    }
+    
+    .footer__barra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 70px;
+    }
+    .footer_titulo {
+        text-align: center;
+    }
+
+    .portada__paginas {
+        background-position-x: -600px;
+        background-position-y: -150px;
+    }
+}
+@media screen and (max-width: 769px) {
+    .portada {
+        background-position-x: -850px;
+
+        &__contenedor{
+            background: rgb(255,255,255);
+            background: linear-gradient(0deg, rgba(255,255,255,0.6778420840992647) 0%, rgba(255,255,255,0) 100%);
+            margin: 7%
+        }
+
+        &__titulo {
+            font-size: 30px;
+            line-height: 50px;
+        }
+    }
+
+    .barrasuperior {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .logo img{
+        max-height: 50px;
+    }
+    .titulo {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .fajas__texto {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .fajas__imagen {
+        width: 100%;
+    }
+    .footer__links {
+        font-size: 13px;
+    }
+    .clientesfelices {
+        margin-top: 70px;
+    }
+    .portada__paginas {
+        background-position-x: -800px;
+
+        &--titulo {
+            font-size: 30px;
+            line-height: 50px;
+        }
+
+        &--contenedor {
+            background: rgb(255,255,255);
+            background: linear-gradient(0deg, rgba(255,255,255,0.6778420840992647) 0%, rgba(255,255,255,0) 100%);
+        }
+    }
+    
+    .productos {
+        margin: 50px;
+    }
+    .producto {
+        padding: 15px;
+    }
+    .menu__mobile--salir {
+        top: -7%;
+    }
+    .entrada__descripcion {
+        font-size: 16px;
+        margin: 20px;
+    }
+    .blog {
+        margin: 50px;
+    }
+    .contenedores {
+        margin: 50px 25px;
+    }
+
+    .nosotros__texto {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .producto__descripcion {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .productos {
+        margin: 25px;
+        margin-top: 100px;
+    }
+    .redes__mobile {
+        font-size: 2rem;
+    }
+    .portada {
+        background-position-x: -900px;
+
+        &__paginas {
+            background-position-x: -1000px;
+        }
+    }
+    .blog {
+        margin: 25px;
+        margin-top: 100px;
+    }
+}

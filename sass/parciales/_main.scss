@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: $color-principal;
+    font-family: $font-family;
+}
+main {
+    background-color: $color-principal;
+    -webkit-box-shadow: 0px 50px 50px -3px rgba(0,0,0,0.41); 
+    box-shadow: 0px 50px 50px -3px rgba(0,0,0,0.41);
+    padding-bottom: 100px;
+}
+.imagenes {
+    height: auto;
+    max-width: 100%;
+}
+.titulo {
+    text-align: center;
+    font-family: $font-family2;
+    font-size: 65px;
+    line-height: 100px;
+    margin-top: 100px;
+    color: white;
+}
+
+.producto__boton {
+    font-family: $font-family;
+    font-weight: 900;
+    font-size: 15px;
+    color: white;
+    background-color: $color-principal;
+    border-radius: 5px;
+    border: 0;
+    padding: 7px 7px 7px 7px;
+    margin-top: 1rem;
+    height: 2rem;
+    width: 125px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        transform: scale(1.1);
+        color: white;
+        background-color: $color-secundario;
+    }
+}

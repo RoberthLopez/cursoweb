@@ -1,0 +1,58 @@
+.portada {
+    display: block;
+    background-image: 
+    url(../images/portada-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    max-width: 100%;
+    padding: 200px 0px 300px 0;
+
+    &__contenedor {
+        margin-left: 15%;
+        margin-right: 50%;
+    }
+
+    &__titulo {
+        font-family: $font-family2;
+        font-size: 70px;
+        color: white;
+        letter-spacing: 0.2px;
+        line-height: 70px;
+        -webkit-text-stroke: 1px;
+        stroke-width: 1px;
+        -webkit-text-stroke-color: #000;
+        stroke: #000;
+    }
+
+    &__texto {
+        font-size: 22px;
+        font-style: bold;
+        font-weight: 500;
+        margin-top: 1.5rem;
+        margin-right: 0;
+        letter-spacing: -1px;
+        line-height: 23px;
+    }
+    &__boton {
+        font-family: $font-family;
+        font-weight: 900;
+        font-size: 15px;
+        color: white;
+        background-color: $color-principal;
+        border-radius: 5px;
+        border: 0;
+        padding: 7px 7px 7px 7px;
+        margin-top: 1rem;
+        height: 2rem;
+        width: 8rem;
+        cursor: pointer;
+        transition: 0.5s;
+        text-decoration: none;
+        
+        &:hover {
+            background-color: $color-secundario;
+        }
+    }
+}
