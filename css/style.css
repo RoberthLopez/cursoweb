@@ -408,6 +408,7 @@ footer i {
   font-family: "Bungee", cursive;
   font-size: 30px;
   color: white;
+  text-align: center;
 }
 
 .clientesfelices {
@@ -530,11 +531,10 @@ footer i {
 }
 
 .contenedor__circular {
-  border: 1px solid;
   border-radius: 30px;
   width: 60px;
   height: 60px;
-  background-color: #f1e4f3;
+  background-color: #f4BBD3;
   margin: 10px;
 }
 
@@ -630,7 +630,7 @@ form {
     padding: 5%;
     margin: 0;
   }
-  .tarjetas {
+  .tarjeta {
     display: flex;
     flex-wrap: wrap;
   }
