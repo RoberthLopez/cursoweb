@@ -17,6 +17,7 @@
         flex-wrap: wrap;
     }
     .portada__paginas {
+        background-size: 200%;
         background-position-x: -400px;
     }
 }
@@ -110,11 +111,6 @@
     .footer_titulo {
         text-align: center;
     }
-
-    .portada__paginas {
-        background-position-x: -600px;
-        background-position-y: -150px;
-    }
 }
 @media screen and (max-width: 769px) {
     .portada {
@@ -158,7 +154,7 @@
         margin-top: 70px;
     }
     .portada__paginas {
-        background-position-x: -800px;
+        background-position-x: -300px;
 
         &--titulo {
             font-size: 30px;
@@ -211,9 +207,9 @@
     }
     .portada {
         background-position-x: -900px;
-
         &__paginas {
-            background-position-x: -1000px;
+            background-position-x: -400px;
+            background-size: 300%;
         }
     }
     .blog {
