@@ -1,7 +1,6 @@
 .portada__paginas {
-    display: flex;
+    @include flex__column;
     justify-content: center;
-    flex-direction: column;
     background-image: 
     url(../images/modelo-portada-final.png);
     background-repeat: no-repeat;

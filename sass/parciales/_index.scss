@@ -1,7 +1,6 @@
 .fajas {
-    display: flex;
+    @include flex__column;
     justify-content: center;
-    flex-direction: column;
     margin-left: 7%;
     margin-right: 7%;
 
@@ -32,6 +31,7 @@
     }
 
     &__1 {
+        @include flex__column;
         background-image: 
         url(../images/soporte-lumbar2.png);
         background-repeat: no-repeat;
@@ -39,35 +39,19 @@
         width: 400px;
         height: 530px;
         border-radius: 5px;
-        display: flex;
-        flex-direction: column;
         justify-content: flex-end;
     }
 
     &__2 {
+        @extend .tarjeta__1;
         background-image: 
         url(../images/cierre-magico.png);
-        background-repeat: no-repeat;
-        background-size: 400px 530px;
-        width: 400px;
-        height: 530px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
     }
 
     &__3 {
+        @extend .tarjeta__1;
         background-image: 
         url(../images/modelo-comoda.png);
-        background-repeat: no-repeat;
-        background-size: 400px 530px;
-        width: 400px;
-        height: 530px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
     }
 
     &__titulo {
@@ -132,8 +116,7 @@
     }
 
     &__nombre {
-        display: flex;
-        flex-direction: column;
+        @include flex__column;
         list-style: none;
         align-self: center;
         font-weight: 800;
