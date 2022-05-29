@@ -52,6 +52,14 @@ main {
   background-color: #f686bd;
 }
 
+.color-texto {
+  color: #FFFFFF;
+}
+
+.color-icono {
+  color: black;
+}
+
 header {
   height: auto;
 }
@@ -523,7 +531,6 @@ footer i {
 
 .contenedor__titulo {
   margin: 20px;
-  color: #f1e4f3;
   text-align: center;
 }
 

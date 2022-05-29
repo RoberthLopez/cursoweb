@@ -1,4 +1,0 @@
-- Agregué el sitemap.xml
-- Puse meta description y keywords en todas las páginas
-- Le baje el peso a las imagenes
-- Agregue conceptos de la clase de sass 2 al index y demas páginas
